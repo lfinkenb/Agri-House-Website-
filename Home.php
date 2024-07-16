@@ -66,7 +66,7 @@
     </nav>
     <div class="container">
         <section class="main">
-            <h2>Bienvenue chez Agri House</h2>
+            <h2>Bienvenue chez Agri House HOME</h2>
             <p>Nous sommes engagés à fournir des solutions agricoles durables pour un avenir meilleur.</p>
         </section>
     </div>
