@@ -1,67 +1,161 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f3f5; /* beige */
+    color: #333; /* couleur de texte */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
-
 
 header {
-    background-color: #FFC0CB;
-    color: #fff;
-    padding: 65px 0; /* Augmentation de la marge intérieure pour élargir le header */
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#cart-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
-section {
-    max-width: 800px;
-    margin: 20px auto;
+    background-color: rgba(76, 175, 80, 0.9); /* vert avec transparence */
+    color: white;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ombre subtile */
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #ffffff; /* blanc */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ombre subtile */
+}
+
+nav a {
+    color: #333; /* couleur de texte */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* transition douce */
+}
+
+nav a:hover {
+    background-color: rgba(76, 175, 80, 0.2); /* vert clair au survol */
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main {
+    background-color: #ffffff; /* blanc */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre subtile */
+    border-radius: 8px; /* coins arrondis */
 }
 
 h2 {
-    color: #333;
+    font-family: 'Merriweather', serif;
+    color: #4caf50; /* vert */
+    margin-top: 0;
+    font-size: 2em;
 }
 
-.categories {
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-list {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.category {
-    width: 48%;
+.product-item {
+    background-color: rgba(224, 247, 250, 0.9); /* couleur de fond légère avec transparence */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ombre subtile */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* transition douce */
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* léger mouvement vers le haut */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* ombre plus prononcée */
+}
+
+.product-item h3 {
+    font-family: 'Merriweather', serif;
+    color: #4caf50; /* vert */
+    font-size: 1.5em;
+}
+
+.product-item p {
+    color: #333; /* couleur de texte */
+    font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
     padding: 10px;
-    background-color: #eee;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* fond blanc avec transparence */
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50; /* vert */
+    color: white;
+    font-size: 18px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* transition douce */
+}
+
+form button:hover {
+    background-color: #45a049; /* vert foncé au survol */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(76, 175, 80, 0.9); /* vert avec transparence */
+    color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* ombre subtile */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
 }
