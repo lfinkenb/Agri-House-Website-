@@ -18,6 +18,13 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ombre subtile */
 }
 
+.header-image {
+    position: absolute; /* Positionne l'image de manière absolue */
+    top: 10px; /* Ajuste cette valeur selon vos besoins */
+    left: 10px; /* Ajuste cette valeur selon vos besoins */
+    height: 60px; /* Ajuste la hauteur de l'image selon vos besoins */
+}
+
 header h1 {
     font-family: 'Merriweather', serif;
     margin: 0;
